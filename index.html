@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8">
+    <title>移民服務網 - 簽證與移民網站</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google字型 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- animate -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- myall.css -->
+    <link href="css/myall.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner 起始標籤 -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner 起始標籤 -->
+
+
+    <!-- 表頭 起始標籤 -->
+    <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-5 text-center text-lg-start mb-lg-0">
+                <div class="d-flex">
+                    <a href="#" class="text-muted me-4"><i
+                            class="fas fa-envelope text-secondary me-2"></i>helpme@emean.com</a>
+                    <a href="#" class="text-muted me-0"><i
+                            class="fas fa-phone-alt text-secondary me-2"></i>04-23456789</a>
+                </div>
+            </div>
+            <div class="col-lg-3 row-cols-1 text-center mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i
+                            class="fab fa-twitter fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i
+                            class="fab fa-facebook-f fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i
+                            class="fab fa-linkedin-in fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i
+                            class="fab fa-instagram fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle" href=""><i
+                            class="fab fa-youtube fw-normal text-secondary"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 表頭 結束標籤 -->
+
+
+    <!-- 導覽列 起始標籤 -->
+    <div class="container-fluid nav-bar p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="display-5 text-secondary m-0"><img src="img/brand-logo.png" class="img-fluid" alt="">移民服務網
+                </h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">首頁</a>
+                    <a href="about.html" class="nav-item nav-link">關於我們</a>
+                    <a href="service.html" class="nav-item nav-link">服務</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-bs-toggle="dropdown"><span
+                                class="dropdown-toggle">更多</span></a>
+                        <div class="dropdown-menu m-0">
+                            <a href="feature.html" class="dropdown-item">特色</a>
+                            <a href="countries.html" class="dropdown-item">國家</a>
+                            <a href="testimonial.html" class="dropdown-item">回饋</a>
+                            <a href="training.html" class="dropdown-item">培訓</a>
+                            <a href="404.html" class="dropdown-item">建置中</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">聯絡我們</a>
+                </div>
+                <button class="btn btn-primary btn-md-square border-secondary mb-3 mb-md-3 mb-lg-0 me-3"
+                    data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                <a href=""
+                    class="btn btn-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0">取得報價</a>
+            </div>
+        </nav>
+    </div>
+    <!-- 導覽列 結束標籤 -->
+
+
+    <!-- 輪播 起始標籤 -->
+    <div class="carousel-header">
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="img/carousel-1.jpg" class="img-fluid" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="text-center p-4" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase fw-bold mb-3 mb-md-4 wow fadeInUp"
+                                data-wow-delay="0.1s">適用於所有類型簽證的解決方案</h4>
+                            <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp"
+                                data-wow-delay="0.3s">移民流程從這裡開始！</h1>
+                            <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">
+                                受夠這個鬼島了嗎？我們提供優質的移民服務，並成功幫助數千人移民至其他國家，脫離這個充滿對立、雙標、仇恨且多年來一直原地踏步又讓人覺得了無希望、看不到未來的鬼地方！</p>
+                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp"
+                                data-wow-delay="0.7s" href="#">更多細節</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel-2.jpg" class="img-fluid" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="text-center p-4" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase fw-bold mb-3 mb-md-4 wow fadeInUp"
+                                data-wow-delay="0.1s">適用於所有類型簽證的解決方案</h5>
+                            <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp"
+                                data-wow-delay="0.3s">最佳簽證移民服務</h1>
+                            <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">
+                                成功幫助上千位對於未來感到迷惘的夥伴，並且取得其他國家簽證，透過任何管道協助移民。如需偷渡，請洽詢本公司業務專員。
+                            </p>
+                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp"
+                                data-wow-delay="0.7s" href="#">更多細節</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-secondary wow fadeInLeft" data-wow-delay="0.2s"
+                    aria-hidden="false"></span>
+                <span class="visually-hidden-focusable">上一頁</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-secondary wow fadeInRight" data-wow-delay="0.2s"
+                    aria-hidden="false"></span>
+                <span class="visually-hidden-focusable">下一頁</span>
+            </button>
+        </div>
+    </div>
+    <!-- 輪播 結束標籤 -->
+
+
+    <!-- 搜尋 起始標籤 -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h4 class="modal-title text-secondary mb-0" id="exampleModalLabel">關鍵字查詢</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 搜尋 結束標籤 -->
+
+
+    <!-- 關於我們 起始標籤 -->
+    <div class="container-fluid overflow-hidden py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="bg-light rounded">
+                        <img src="img/about-2.png" class="img-fluid w-100" style="margin-bottom: -7px;" alt="Image">
+                        <img src="img/about-3.jpg" class="img-fluid w-100 border-bottom border-5 border-primary"
+                            style="border-top-right-radius: 300px; border-top-left-radius: 300px;" alt="Image">
+                    </div>
+                </div>
+                <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
+                    <h5 class="sub-title pe-3">我們的公司</h5>
+                    <h1 class="display-5 mb-4">我們是值得信賴的移民顧問機構。</h1>
+                    <p class="mb-4">本公司自1999年起從事美、加、英、澳、紐...等各國的創業、投資、分公司、技術、聘僱…等移民與留學服務，“創造雙贏„
+                        始終是瀚威的服務宗旨。我們深信“唯有真誠地助人才能安然地自助„ 秉持此理念，讓我們能在同址持續服務25年至今屹立不搖。</p>
+                    <p class="mb-4">
+                        雖然各國的移民或簽證法規繁瑣且經常變動，唯大原則總是一樣的，25年的實務經驗，瀚威國際顧問公司已然熟知各國移民簽證律法且靈活地運用，依據個人不同的目標、背景、經費與須求，規劃出最有利的方案協助國人完成心願，成功走出海外發展者已不計其數，是業界中最資深且口碑優良者之一。
+                    </p>
+                    <div class="row gy-4 align-items-center">
+                        <div class="col-12 col-sm-6 d-flex align-items-center">
+                            <i class="fas fa-map-marked-alt fa-3x text-secondary"></i>
+                            <h5 class="ms-4">最佳移民資源</h5>
+                        </div>
+                        <div class="col-12 col-sm-6 d-flex align-items-center">
+                            <i class="fas fa-passport fa-3x text-secondary"></i>
+                            <h5 class="ms-4">可提供回程簽證</h5>
+                        </div>
+                        <div class="col-4 col-md-3">
+                            <div class="bg-light text-center rounded p-3">
+                                <div class="mb-2">
+                                    <i class="fas fa-ticket-alt fa-4x text-primary"></i>
+                                </div>
+                                <h1 class="display-5 fw-bold mb-2">34</h1>
+                                <p class="text-muted mb-0">多年經驗</p>
+                            </div>
+                        </div>
+                        <div class="col-8 col-md-9">
+                            <div class="mb-5">
+                                <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i>
+                                    提供100%的服務與協助</p>
+                                <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i>
+                                    執行速度更快、更可靠</p>
+                                <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i>
+                                    準確的專家建議</p>
+                            </div>
+                            <div class="d-flex flex-wrap">
+                                <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                                    <a href="" class="position-relative wow tada" data-wow-delay=".9s">
+                                        <i class="fa fa-phone-alt text-primary fa-3x"></i>
+                                        <div class="position-absolute" style="top: 0; left: 25px;">
+                                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <span class="text-primary">有任何疑問？</span>
+                                    <span class="text-secondary fw-bold fs-5"
+                                        style="letter-spacing: 2px;">免費諮詢專線：0800-000-000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 關於我們 結束標籤 -->
+
+
+    <!-- 數據 起始標籤 -->
+    <div class="container-fluid counter-facts py-5">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="counter">
+                        <div class="counter-icon">
+                            <i class="fas fa-passport"></i>
+                        </div>
+                        <div class="counter-content">
+                            <h3>簽證類別</h3>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span class="counter-value" data-toggle="counter-up">25</span>
+                                <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="counter">
+                        <div class="counter-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="counter-content">
+                            <h3>團隊成員</h3>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span class="counter-value" data-toggle="counter-up">233</span>
+                                <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="counter">
+                        <div class="counter-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <div class="counter-content">
+                            <h3>成功案例</h3>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span class="counter-value" data-toggle="counter-up">5.8</span>
+                                <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">K</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="counter">
+                        <div class="counter-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="counter-content">
+                            <h3>成功率</h3>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span class="counter-value" data-toggle="counter-up">97</span>
+                                <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">%</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 數據 結束標籤 -->
+
+
+    <!-- 簽證類別 起始標籤 -->
+    <div class="container-fluid service overflow-hidden pt-5">
+        <div class="container py-5">
+            <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary px-3">簽證類別</h5>
+                </div>
+                <h1 class="display-5 mb-4">成功移民</h1>
+                <p class="mb-0">飄著咖啡豆香氣的店面，人來人往，有一雙專注的眼神正為客戶分析與規劃移民項目，說明流程與解答疑問。</P>
+                <p class="mb-0">早晨通勤的車站人潮之中，台北開往左營的列車即將發車，行駛了361公里後，充滿著熱忱與專業的長榮顧問親自抵達客戶所在地。</p>
+                <p class="mb-0">歐式風格的會議室裏頭討論聲此起彼落，一家人仔細聆聽長榮顧問的介紹與解說，規畫著孩子的教育計劃。</p>
+                <p class="mb-0">–這些都是移民服務網的日常。</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <div class="service-inner">
+                            <div class="service-img">
+                                <img src="img/service-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            </div>
+                            <div class="service-title">
+                                <div class="service-title-name">
+                                    <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                        <a href="#" class="h4 text-white mb-0">工作簽證</a>
+                                    </div>
+                                    <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">了解更多</a>
+                                </div>
+                                <div class="service-content pb-4">
+                                    <a href="#">
+                                        <h4 class="text-white mb-4 py-3">工作簽證</h4>
+                                    </a>
+                                    <div class="px-4">
+                                        <p class="mb-4">工作簽證是一種允許外國公民在另一國家合法工作的簽證。這類簽證通常是由目的地國的政府或其領事館發放，並且有許多不同的類型和要求，取決於你打算在哪個國家工作和工作的性質。<br>在申請工作簽證之前，了解目的地國家的具體要求和程序是非常重要的，這樣可以確保你的申請順利進行。</p>
+                                        <a class="btn btn-primary border-secondary rounded-pill py-3 px-5"
+                                            href="#">了解更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <div class="service-inner">
+                            <div class="service-img">
+                                <img src="img/service-2.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            </div>
+                            <div class="service-title">
+                                <div class="service-title-name">
+                                    <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                        <a href="#" class="h4 text-white mb-0">商務簽證</a>
+                                    </div>
+                                    <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">了解更多</a>
+                                </div>
+                                <div class="service-content pb-4">
+                                    <a href="#">
+                                        <h4 class="text-white mb-4 py-3">商務簽證</h4>
+                                    </a>
+                                    <div class="px-4">
+                                        <p class="mb-4">商務簽證是一種專門為商業活動而設計的簽證，允許持有者進入另一國家進行與業務相關的活動，而不是從事全職工作。這類簽證通常適用於短期出差、會議、商業洽談、展會參加或其他商業交流活動。<br>如果你的商業活動需要更長時間的停留或其他工作安排，可能需要考慮其他類型的簽證或許可。</p>
+                                        <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5"
+                                            href="#">了解更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="service-inner">
+                            <div class="service-img">
+                                <img src="img/service-3.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            </div>
+                            <div class="service-title">
+                                <div class="service-title-name">
+                                    <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                        <a href="#" class="h4 text-white mb-0">過境簽證</a>
+                                    </div>
+                                    <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">了解更多</a>
+                                </div>
+                                <div class="service-content pb-4">
+                                    <a href="#">
+                                        <h4 class="text-white mb-4 py-3">外交簽證</h4>
+                                    </a>
+                                    <div class="px-4">
+                                        <p class="mb-4">過境簽證（Transit Visa）是一種允許外國公民在經過某個國家時短暫停留的簽證。這種簽證通常是為那些需要在中途停留或轉機的旅客設計的，目的是讓他們在轉機過程中能夠合法進入該國，無論是短暫的逗留還是進行某些必要的行動。</p>
+                                        <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5"
+                                            href="#">了解更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <div class="service-inner">
+                            <div class="service-img">
+                                <img src="img/service-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            </div>
+                            <div class="service-title">
+                                <div class="service-title-name">
+                                    <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                        <a href="#" class="h4 text-white mb-0">學生簽證</a>
+                                    </div>
+                                    <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">了解更多</a>
+                                </div>
+                                <div class="service-content pb-4">
+                                    <a href="#">
+                                        <h4 class="text-white mb-4 py-3">學生簽證</h4>
+                                    </a>
+                                    <div class="px-4">
+                                        <p class="mb-4">學生簽證是一種專門為希望在外國學習的外國公民發放的簽證。這種簽證允許持有者在目的國的教育機構進行全日制或部分時間的學習。<br>學生簽證的目的是讓國際學生能夠合法地在外國學習，並且通常有助於學生獲得所需的教育資格和技能。</p>
+                                        <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5"
+                                            href="#">了解更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <div class="service-inner">
+                            <div class="service-img">
+                                <img src="img/service-2.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            </div>
+                            <div class="service-title">
+                                <div class="service-title-name">
+                                    <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                        <a href="#" class="h4 text-white mb-0">居留簽證</a>
+                                    </div>
+                                    <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">了解更多</a>
+                                </div>
+                                <div class="service-content pb-4">
+                                    <a href="#">
+                                        <h4 class="text-white mb-4 py-3">居留簽證</h4>
+                                    </a>
+                                    <div class="px-4">
+                                        <p class="mb-4">居留簽證（Residence Visa）是一種允許外國公民在某個國家長期或永久居住的簽證。這類簽證通常適用於那些希望在目的國長期生活、工作或與家庭團聚的人。<br>居留簽證的目的是使外國公民能夠在目的國合法長期居住，並通常有助於促進家庭團聚、投資或工作安排。</p>
+                                        <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5"
+                                            href="#">了解更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="service-inner">
+                            <div class="service-img">
+                                <img src="img/service-3.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            </div>
+                            <div class="service-title">
+                                <div class="service-title-name">
+                                    <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                        <a href="#" class="h4 text-white mb-0">旅遊簽證</a>
+                                    </div>
+                                    <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">了解更多</a>
+                                </div>
+                                <div class="service-content pb-4">
+                                    <a href="#">
+                                        <h4 class="text-white mb-4 py-3">旅遊簽證</h4>
+                                    </a>
+                                    <div class="px-4">
+                                        <p class="mb-4">旅遊簽證（Tourist Visa）是一種允許外國公民在另一國家進行短期旅行和觀光的簽證。這種簽證通常適用於那些打算在目的國進行旅遊、參觀名勝古蹟、探親訪友或休閒度假的人。<br>旅遊簽證的目的是使外國公民能夠合法地進行短期旅行，享受目的國的文化和景點。</p>
+                                        <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5"
+                                            href="#">了解更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 簽證類別 結束標籤 -->
+
+
+    <!-- 為什麼選擇我們 起始標籤 -->
+    <div class="container-fluid features overflow-hidden py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary px-3">為什麼選擇我們</h5>
+                </div>
+                <h1 class="display-5 mb-4">提供客戶所需的客製化服務</h1>
+                <p class="mb-0">根據客戶的具體情況和目標，我們的移民服務提供商會制定個性化的移民計劃。這包括選擇最合適的簽證類型、準備必要的文件和證明、以及規劃整個申請過程。</p>
+            </div>
+            <div class="row g-4 justify-content-center text-center">
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="feature-item text-center p-4">
+                        <div class="feature-icon p-3 mb-4">
+                            <i class="fas fa-dollar-sign fa-4x text-primary"></i>
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-3">性價比高</h5>
+                            <p class="mb-3">提供免費的初步諮詢服務，以幫助客戶了解自己的移民選擇和潛在費用。在這一階段，客戶可以獲得基本的專業建議，而不需要支付任何費用。</p>
+                            <a class="btn btn-secondary rounded-pill" href="#">閱讀更多<i
+                                    class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="feature-item text-center p-4">
+                        <div class="feature-icon p-3 mb-4">
+                            <i class="fab fa-cc-visa fa-4x text-primary"></i>
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-3">簽證協助</h5>
+                            <p class="mb-3">提供針對每位申請者的個性化評估，根據申請者的背景、目的和需求，推薦最合適的簽證類型。提供專業的法律和政策建議，解釋簽證要求和程序，幫助申請者理解複雜的移民法規。</p>
+                            <a class="btn btn-secondary rounded-pill" href="#">閱讀更多<i
+                                    class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="feature-item text-center p-4">
+                        <div class="feature-icon p-3 mb-4">
+                            <i class="fas fa-atlas fa-4x text-primary"></i>
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-3">處理速度更快</h5>
+                            <p class="mb-3">我們的移民顧問會確保申請材料準確、完整，減少因材料錯誤或不完整而導致的延誤。專業顧問能夠更快地準備和審核所需文件，並迅速解決任何問題。</p>
+                            <a class="btn btn-secondary rounded-pill" href="#">閱讀更多<i
+                                    class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="feature-item text-center p-4">
+                        <div class="feature-icon p-3 mb-4">
+                            <i class="fas fa-users fa-4x text-primary"></i>
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-3">客製化服務</h5>
+                            <p class="mb-3">根據客戶的具體需求和情況，提供個性化的建議和解決方案。例如，在移民諮詢中，會根據客戶的背景、目標和條件制定最佳的移民方案。</p>
+                            <a class="btn btn-secondary rounded-pill" href="#">閱讀更多<i
+                                    class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <a class="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp"
+                        data-wow-delay="0.1s" href="#">更多服務</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 為什麼選擇我們 結束標籤 -->
+
+
+    <!-- 我們提供的國家 起始標籤 -->
+    <div class="container-fluid country overflow-hidden py-5">
+        <div class="container">
+            <div class="section-title text-center wow fadeInUp" data-wow-delay="0.1s" style="margin-bottom: 70px;">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary px-3">我們提供的國家</h5>
+                </div>
+                <h1 class="display-5 mb-4">以下國家的移民和簽證服務</h1>
+                <p class="mb-0">根據英國國際搬家服務公司「1st Move International」近期發布的「2024宜居指數」排行榜，加拿大成為全球最受歡迎的移民目的地，搜尋量達到150萬次，穩居榜首。此研究透過分析Google搜尋數據，找出每個國家關於搬遷、搬家、房屋的搜尋次數，進而確定搜尋次數最高的國家。除此之外，第2至第5名的國家分別是澳洲、紐西蘭、西班牙和英國。</p>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="country-item">
+                        <div class="rounded overflow-hidden">
+                            <img src="img/Australia-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        </div>
+                        <div class="country-flag">
+                            <img src="img/Australia.jpg" class="img-fluid rounded-circle" alt="Image">
+                        </div>
+                        <div class="country-name">
+                            <a href="#" class="text-white fs-4">澳洲</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="country-item">
+                        <div class="rounded overflow-hidden">
+                            <img src="img/nza.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        </div>
+                        <div class="country-flag">
+                            <img src="img/NewZealand.jpg" class="img-fluid rounded-circle" alt="Image">
+                        </div>
+                        <div class="country-name">
+                            <a href="#" class="text-white fs-4">紐西蘭</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="country-item">
+                        <div class="rounded overflow-hidden">
+                            <img src="img/spaincity.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        </div>
+                        <div class="country-flag">
+                            <img src="img/Spain.jpg" class="img-fluid rounded-circle" alt="Image">
+                        </div>
+                        <div class="country-name">
+                            <a href="#" class="text-white fs-4">西班牙</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="country-item">
+                        <div class="rounded overflow-hidden">
+                            <img src="img/uk.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        </div>
+                        <div class="country-flag">
+                            <img src="img/England.jpg" class="img-fluid rounded-circle" alt="Image">
+                        </div>
+                        <div class="country-name">
+                            <a href="#" class="text-white fs-4">英國</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <a class="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp"
+                        data-wow-delay="0.1s" href="#">更多國家</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 我們提供的國家 結束標籤 -->
+
+
+    <!-- 客戶回饋 起始標籤 -->
+    <div class="container-fluid testimonial overflow-hidden pb-5">
+        <div class="container py-5">
+            <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary px-3">客戶回饋</h5>
+                </div>
+                <h1 class="display-5 mb-4">我們的客戶怎麼說</h1>
+                <p class="mb-0">大多數的客戶脫離了這個鬼島之後，就如同發現新的世界，開始規劃自己的人生目標，希望在新的環境中長期居住下來。就連原本沒有計畫結婚生子的年輕人，都有了源源不絕的動力！開始在新的國家創業、賺錢、享受生活，培育下一代，因為他們總算知道，原來天無絕人之路。</p>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow zoomInDown" data-wow-delay="0.2s">
+                <div class="testimonial-item">
+                    <div class="testimonial-content p-4 mb-5">
+                        <p class="fs-5 mb-0">自從李靚蕾毀滅式爆料使用蕾神之槌給我捅了一刀之後，試圖想要徹底毀滅我，讓我連見孩子的機會都沒有，幸好我找到這家公司，讓我成功擁有美國國籍，可以用我賺來的錢錢在美國置產購屋居住在這裡，享受沒有狗仔跟蹤的生活，讓我可以擁有雙重國籍，有需要的時候還可以回台灣用健保！
+                        </p>
+                        <div class="d-flex justify-content-end">
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="rounded-circle me-4" style="width: 100px; height: 100px;">
+                            <img class="img-fluid rounded-circle" src="img/person1.jpg" alt="img">
+                        </div>
+                        <div class="my-auto">
+                            <h5>王力宏</h5>
+                            <p class="mb-0">創作歌手</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content p-4 mb-5">
+                        <p class="fs-5 mb-0">昨日像那東流水，離我遠去不可留，今日亂我心多煩憂。沒有錯，這就是我在台灣所創作的歌曲！自從我移居到祖國之後，我開始明白，祖國真的是太美啦！除了這邊醫療費用有點高之外，其他沒什麼好挑剔的。但幸好我沒有放棄台灣的公民身分，在貴公司的協助之下，即便我移民回祖國，我還是可以回台灣爽用健保！
+                        </p>
+                        <div class="d-flex justify-content-end">
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="rounded-circle me-4" style="width: 100px; height: 100px;">
+                            <img class="img-fluid rounded-circle" src="img/person2.jpg" alt="img">
+                        </div>
+                        <div class="my-auto">
+                            <h5>黃安</h5>
+                            <p class="mb-0">反台獨藝人</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content p-4 mb-5">
+                        <p class="fs-5 mb-0">自從支援太陽花學運之後，我就開始被中共追殺，直到我找到這個移民服務網，幫助我成功移民到台灣，逃過中共的追殺之後，即便我沒有什麼家喻戶曉的知名作品，但我只要在網路社群媒體上講一些幹話，就會有媒體來抄，提升我的知名度，讓我蹭蹭版面，我覺得台灣撇開政治來說還算不錯，等我撈夠了一些錢，我還會再找這個專業的移民服務，幫助我移民到其他國家。
+                        </p>
+                        <div class="d-flex justify-content-end">
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="rounded-circle me-4" style="width: 100px; height: 100px;">
+                            <img class="img-fluid rounded-circle" src="img/person3.jpg" alt="img">
+                        </div>
+                        <div class="my-auto">
+                            <h5>杜汶澤</h5>
+                            <p class="mb-0">香港藝人</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 客戶回饋 結束標籤 -->
+
+
+    <!-- 我們的外語培訓 起始標籤 -->
+    <div class="container-fluid training overflow-hidden bg-light py-5">
+        <div class="container py-5">
+            <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary px-3">我們的外語培訓</h5>
+                </div>
+                <h1 class="display-5 mb-4">專業的外師可以幫助你提升你的外語能力</h1>
+                <p class="mb-0">提升英文能力的好處非常多樣化，不僅能夠幫助你在專業和學術領域取得成功，還能夠豐富你的個人生活和增強全球溝通能力。無論是短期還是長期，投資於提升英文能力都是非常值得的。</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="training-item">
+                        <div class="training-inner">
+                            <img src="img/IELTS.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            <div class="training-title-name">
+                                <a href="#" class="h4 text-white mb-0">雅思</a>
+                                <a href="#" class="h4 text-white mb-0">輔導</a>
+                            </div>
+                        </div>
+                        <div class="training-content bg-secondary rounded-bottom p-4">
+                            <a href="#">
+                                <h4 class="text-white">雅思輔導</h4>
+                            </a>
+                            <p class="text-white-50">雅思（IELTS，International English Language Testing System）認證有許多顯著的優勢，這使得它成為全球最受認可的英語能力測試之一。</p>
+                            <a class="btn btn-secondary rounded-pill text-white p-0" href="#">閱讀更多 <i
+                                    class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="training-item">
+                        <div class="training-inner">
+                            <img src="img/TOEFL.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            <div class="training-title-name">
+                                <a href="#" class="h4 text-white mb-0">托福</a>
+                                <a href="#" class="h4 text-white mb-0">輔導</a>
+                            </div>
+                        </div>
+                        <div class="training-content bg-secondary rounded-bottom p-4">
+                            <a href="#">
+                                <h4 class="text-white">托福輔導</h4>
+                            </a>
+                            <p class="text-white-50">托福（TOEFL，Test of English as a Foreign Language）認證擁有許多顯著的優勢，使其成為全球最受認可的英語能力測試之一。</p>
+                            <a class="btn btn-secondary rounded-pill text-white p-0" href="#">閱讀更多 <i
+                                    class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="training-item">
+                        <div class="training-inner">
+                            <img src="img/TOEIC.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            <div class="training-title-name">
+                                <a href="#" class="h4 text-white mb-0">多益</a>
+                                <a href="#" class="h4 text-white mb-0">輔導</a>
+                            </div>
+                        </div>
+                        <div class="training-content bg-secondary rounded-bottom p-4">
+                            <a href="#">
+                                <h4 class="text-white">多益輔導</h4>
+                            </a>
+                            <p class="text-white-50">多益（TOEIC，Test of English for International Communication）認證具有許多獨特的優勢，使其在全球職場和商業環境中非常受歡迎。</p>
+                            <a class="btn btn-secondary rounded-pill text-white p-0" href="#">閱讀更多 <i
+                                    class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="training-item">
+                        <div class="training-inner">
+                            <img src="img/JLPT.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            <div class="training-title-name">
+                                <a href="#" class="h4 text-white mb-0">日本語能力試驗</a>
+                                <a href="#" class="h4 text-white mb-0">輔導</a>
+                            </div>
+                        </div>
+                        <div class="training-content bg-secondary rounded-bottom p-4">
+                            <a href="#">
+                                <h4 class="text-white">日本語能力試驗輔導</h4>
+                            </a>
+                            <p class="text-white-50">JLPT（Japanese-Language Proficiency Test）：由日本國際交流基金會頒發，測試日語能力，分為N1到N5級別，N1為最高級別。</p>
+                            <a class="btn btn-secondary rounded-pill text-white p-0" href="#">閱讀更多 <i
+                                    class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <a class="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp"
+                        data-wow-delay="0.1s" href="#">更多</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 我們的外語培訓 結束標籤 -->
+
+
+    <!-- 全球辦事處 起始標籤 -->
+    <div class="container-fluid contact overflow-hidden pb-5">
+        <div class="container py-5">
+            <div class="office pt-5">
+                <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="sub-style">
+                        <h5 class="sub-title text-primary px-3">全球辦事處</h5>
+                    </div>
+                    <h1 class="display-5 mb-4">探索我們的全球辦事處</h1>
+                    <p class="mb-0">我們在全球各地都有辦事處，當你移民到任何一個國家，都可以找到我們，尋求任何的協助。</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="office-item p-4">
+                            <div class="office-img mb-4">
+                                <img src="img/office-2.jpg" class="img-fluid w-100 rounded" alt="">
+                            </div>
+                            <div class="office-content d-flex flex-column">
+                                <h4 class="mb-2">澳洲</h4>
+                                <a href="#" class="text-secondary fs-5 mb-2">(61-2) 66668888</a>
+                                <a href="#" class="text-muted fs-5 mb-2">sales@emean.com.au</a>
+                                <p class="mb-0">3/7 Argong Chase, Cockburn Central WA 6164</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="office-item p-4">
+                            <div class="office-img mb-4">
+                                <img src="img/office-1.jpg" class="img-fluid w-100 rounded" alt="">
+                            </div>
+                            <div class="office-content d-flex flex-column">
+                                <h4 class="mb-2">加拿大</h4>
+                                <a href="#" class="text-secondary fs-5 mb-2">+1-666- 777-8888</a>
+                                <a href="#" class="text-muted fs-5 mb-2">sales@emean.ca</a>
+                                <p class="mb-0">6083 MCKAY AVENUE, BURNABY, BRITISH COLUMBIA, V5H 2W7, CANADA </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="office-item p-4">
+                            <div class="office-img mb-4">
+                                <img src="img/office-3.jpg" class="img-fluid w-100 rounded" alt="">
+                            </div>
+                            <div class="office-content d-flex flex-column">
+                                <h4 class="mb-2">英國</h4>
+                                <a href="#" class="text-secondary fs-5 mb-2">+44 (20) 1234 5678</a>
+                                <a href="#" class="text-muted fs-5 mb-2">sales@emean.uk</a>
+                                <p class="mb-0">61-66 RUSSELL SQUARE LONDON WC1B 5BB, UNITED KINGDOM. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="office-item p-4">
+                            <div class="office-img mb-4">
+                                <img src="img/office-4.jpg" class="img-fluid w-100 rounded" alt="">
+                            </div>
+                            <div class="office-content d-flex flex-column">
+                                <h4 class="mb-2">印度</h4>
+                                <a href="#" class="text-secondary fs-5 mb-2">+ 91 + (7)11-222-3333</a>
+                                <a href="#" class="text-muted fs-5 mb-2">sales@emean.in</a>
+                                <p class="mb-0">A4, DLF Place, Saket District Centre, New Delhi, Delhi 110017</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 全球辦事處 結束標籤 -->
+
+
+    <!-- 頁尾 起始標籤 -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">聯絡方式</h4>
+                        <a href=""><i class="fa fa-map-marker-alt me-2"></i> 407254 台中市西屯區工業區一路100號</a>
+                        <a href=""><i class="fas fa-envelope me-2"></i> sales@wda.service.com</a>
+                        <a href=""><i class="fas fa-phone me-2"></i> 04-23456789</a>
+                        <a href="" class="mb-3"><i class="fas fa-print me-2"></i> 04-22334455</a>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                            <a class="btn mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">開放時間</h4>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">周一 - 周五:</h6>
+                            <p class="text-white mb-0">10:00AM - 20:00PM</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">周六 - 周日:</h6>
+                            <p class="text-white mb-0">10:00AM - 17:00PM</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">例假日:</h6>
+                            <p class="text-white mb-0">12:00AM - 17:00PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">我們的服務</h4>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> 商務</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> 諮詢</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> 移民</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> 培訓</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> 簽證</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> 就業</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="text-secondary mb-4">聯絡我們</h4>
+                        <p class="text-white mb-3">如果你有移民的需求，歡迎在下方填寫E-mail與我們聯繫</p>
+                        <div class="position-relative mx-auto rounded-pill">
+                            <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="請輸入你的電子郵件">
+                            <button type="button"
+                                class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">報名</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 頁尾 結束標籤 -->
+
+
+    <!-- 版權宣告 起始標籤 -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-white"><a href="#" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>移民服務網</a>, All right
+                        reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-white">
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    Designed By <a class="border-bottom text-white" href="#">Steven</a>
+                    Distributed By <a class="border-bottom text-white" href="#">Steven</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 版權宣告 結束標籤 -->
+
+
+    <!-- 回到最上方 -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

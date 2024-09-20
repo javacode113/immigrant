@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8">
+    <title>移民服務網 - 簽證與移民網站</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google字型 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- animate -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- myall.css -->
+    <link href="css/myall.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner 起始標籤 -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner 起始標籤 -->
+
+
+    <!-- 表頭 起始標籤 -->
+    <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-5 text-center text-lg-start mb-lg-0">
+                <div class="d-flex">
+                    <a href="#" class="text-muted me-4"><i
+                            class="fas fa-envelope text-secondary me-2"></i>helpme@emean.com</a>
+                    <a href="#" class="text-muted me-0"><i
+                            class="fas fa-phone-alt text-secondary me-2"></i>04-23456789</a>
+                </div>
+            </div>
+            <div class="col-lg-3 row-cols-1 text-center mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i
+                            class="fab fa-twitter fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i
+                            class="fab fa-facebook-f fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i
+                            class="fab fa-linkedin-in fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i
+                            class="fab fa-instagram fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle" href=""><i
+                            class="fab fa-youtube fw-normal text-secondary"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 表頭 結束標籤 -->
+
+
+    <!-- 導覽列 起始標籤 -->
+    <div class="container-fluid nav-bar p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="display-5 text-secondary m-0"><img src="img/brand-logo.png" class="img-fluid" alt="">Travisa</h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">首頁</a>
+                    <a href="about.html" class="nav-item nav-link">關於我們</a>
+                    <a href="service.html" class="nav-item nav-link">服務</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link active" data-bs-toggle="dropdown"><span class="dropdown-toggle">更多</span></a>
+                        <div class="dropdown-menu m-0">
+                            <a href="feature.html" class="dropdown-item active">特色</a>
+                            <a href="countries.html" class="dropdown-item">國家</a>
+                            <a href="testimonial.html" class="dropdown-item">回饋</a>
+                            <a href="training.html" class="dropdown-item">培訓</a>
+                            <a href="404.html" class="dropdown-item">建置中</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">聯絡我們</a>
+                </div>
+                <button class="btn btn-primary btn-md-square border-secondary mb-3 mb-md-3 mb-lg-0 me-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                <a href="" class="btn btn-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0">取得報價</a>
+            </div>
+        </nav>
+    </div>
+    <!-- 導覽列 結束標籤 -->
+
+
+    <!-- 搜尋 起始標籤 -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h4 class="modal-title text-secondary mb-0" id="exampleModalLabel">關鍵字查詢</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 搜尋 結束標籤 -->
+
+
+    <!-- Header 起始標籤 -->
+    <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">我們的特色</h1>
+                <ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">首頁</a></li>
+                    <li class="breadcrumb-item active text-secondary">特色</li>
+                </ol>
+        </div>
+    </div>
+    <!-- Header 結束標籤 -->
+
+
+    <!-- 為什麼選擇我們 起始標籤 -->
+    <div class="container-fluid features overflow-hidden py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary px-3">為什麼選擇我們</h5>
+                </div>
+                <h1 class="display-5 mb-4">提供客戶所需的客製化服務</h1>
+                <p class="mb-0">根據客戶的具體情況和目標，我們的移民服務提供商會制定個性化的移民計劃。這包括選擇最合適的簽證類型、準備必要的文件和證明、以及規劃整個申請過程。</p>
+            </div>
+            <div class="row g-4 justify-content-center text-center">
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="feature-item text-center p-4">
+                        <div class="feature-icon p-3 mb-4">
+                            <i class="fas fa-dollar-sign fa-4x text-primary"></i>
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-3">性價比高</h5>
+                            <p class="mb-3">提供免費的初步諮詢服務，以幫助客戶了解自己的移民選擇和潛在費用。在這一階段，客戶可以獲得基本的專業建議，而不需要支付任何費用。</p>
+                            <a class="btn btn-secondary rounded-pill" href="#">閱讀更多<i
+                                    class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="feature-item text-center p-4">
+                        <div class="feature-icon p-3 mb-4">
+                            <i class="fab fa-cc-visa fa-4x text-primary"></i>
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-3">簽證協助</h5>
+                            <p class="mb-3">提供針對每位申請者的個性化評估，根據申請者的背景、目的和需求，推薦最合適的簽證類型。提供專業的法律和政策建議，解釋簽證要求和程序，幫助申請者理解複雜的移民法規。</p>
+                            <a class="btn btn-secondary rounded-pill" href="#">閱讀更多<i
+                                    class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="feature-item text-center p-4">
+                        <div class="feature-icon p-3 mb-4">
+                            <i class="fas fa-atlas fa-4x text-primary"></i>
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-3">處理速度更快</h5>
+                            <p class="mb-3">我們的移民顧問會確保申請材料準確、完整，減少因材料錯誤或不完整而導致的延誤。專業顧問能夠更快地準備和審核所需文件，並迅速解決任何問題。</p>
+                            <a class="btn btn-secondary rounded-pill" href="#">閱讀更多<i
+                                    class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="feature-item text-center p-4">
+                        <div class="feature-icon p-3 mb-4">
+                            <i class="fas fa-users fa-4x text-primary"></i>
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-3">客製化服務</h5>
+                            <p class="mb-3">根據客戶的具體需求和情況，提供個性化的建議和解決方案。例如，在移民諮詢中，會根據客戶的背景、目標和條件制定最佳的移民方案。</p>
+                            <a class="btn btn-secondary rounded-pill" href="#">閱讀更多<i
+                                    class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <a class="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp"
+                        data-wow-delay="0.1s" href="#">更多服務</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 為什麼選擇我們 結束標籤 -->
+
+
+    <!-- 數據 起始標籤 -->
+    <div class="container-fluid counter-facts py-5">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="counter">
+                        <div class="counter-icon">
+                            <i class="fas fa-passport"></i>
+                        </div>
+                        <div class="counter-content">
+                            <h3>簽證類別</h3>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span class="counter-value" data-toggle="counter-up">25</span>
+                                <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="counter">
+                        <div class="counter-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="counter-content">
+                            <h3>團隊成員</h3>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span class="counter-value" data-toggle="counter-up">233</span>
+                                <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="counter">
+                        <div class="counter-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <div class="counter-content">
+                            <h3>成功案例</h3>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span class="counter-value" data-toggle="counter-up">5.8</span>
+                                <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">K</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="counter">
+                        <div class="counter-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="counter-content">
+                            <h3>成功率</h3>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span class="counter-value" data-toggle="counter-up">97</span>
+                                <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">%</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 數據 結束標籤 -->
+
+
+    <!-- 我們提供的國家 起始標籤 -->
+    <div class="container-fluid country overflow-hidden py-5">
+        <div class="container">
+            <div class="section-title text-center wow fadeInUp" data-wow-delay="0.1s" style="margin-bottom: 70px;">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary px-3">我們提供的國家</h5>
+                </div>
+                <h1 class="display-5 mb-4">以下國家的移民和簽證服務</h1>
+                <p class="mb-0">根據英國國際搬家服務公司「1st Move International」近期發布的「2024宜居指數」排行榜，加拿大成為全球最受歡迎的移民目的地，搜尋量達到150萬次，穩居榜首。此研究透過分析Google搜尋數據，找出每個國家關於搬遷、搬家、房屋的搜尋次數，進而確定搜尋次數最高的國家。除此之外，第2至第5名的國家分別是澳洲、紐西蘭、西班牙和英國。</p>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="country-item">
+                        <div class="rounded overflow-hidden">
+                            <img src="img/Australia-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        </div>
+                        <div class="country-flag">
+                            <img src="img/Australia.jpg" class="img-fluid rounded-circle" alt="Image">
+                        </div>
+                        <div class="country-name">
+                            <a href="#" class="text-white fs-4">澳洲</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="country-item">
+                        <div class="rounded overflow-hidden">
+                            <img src="img/nza.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        </div>
+                        <div class="country-flag">
+                            <img src="img/NewZealand.jpg" class="img-fluid rounded-circle" alt="Image">
+                        </div>
+                        <div class="country-name">
+                            <a href="#" class="text-white fs-4">紐西蘭</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="country-item">
+                        <div class="rounded overflow-hidden">
+                            <img src="img/spaincity.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        </div>
+                        <div class="country-flag">
+                            <img src="img/Spain.jpg" class="img-fluid rounded-circle" alt="Image">
+                        </div>
+                        <div class="country-name">
+                            <a href="#" class="text-white fs-4">西班牙</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="country-item">
+                        <div class="rounded overflow-hidden">
+                            <img src="img/uk.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        </div>
+                        <div class="country-flag">
+                            <img src="img/England.jpg" class="img-fluid rounded-circle" alt="Image">
+                        </div>
+                        <div class="country-name">
+                            <a href="#" class="text-white fs-4">英國</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <a class="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp"
+                        data-wow-delay="0.1s" href="#">更多國家</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 我們提供的國家 結束標籤 -->
+
+
+    <!-- 頁尾 起始標籤 -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">聯絡方式</h4>
+                        <a href=""><i class="fa fa-map-marker-alt me-2"></i> 407254 台中市西屯區工業區一路100號</a>
+                        <a href=""><i class="fas fa-envelope me-2"></i> sales@wda.service.com</a>
+                        <a href=""><i class="fas fa-phone me-2"></i> 04-23456789</a>
+                        <a href="" class="mb-3"><i class="fas fa-print me-2"></i> 04-22334455</a>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                            <a class="btn mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">開放時間</h4>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">周一 - 周五:</h6>
+                            <p class="text-white mb-0">10:00AM - 20:00PM</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">周六 - 周日:</h6>
+                            <p class="text-white mb-0">10:00AM - 17:00PM</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">例假日:</h6>
+                            <p class="text-white mb-0">12:00AM - 17:00PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">我們的服務</h4>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> 商務</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> 諮詢</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> 移民</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> 培訓</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> 簽證</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> 就業</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="text-secondary mb-4">聯絡我們</h4>
+                        <p class="text-white mb-3">如果你有移民的需求，歡迎在下方填寫E-mail與我們聯繫</p>
+                        <div class="position-relative mx-auto rounded-pill">
+                            <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="請輸入你的電子郵件">
+                            <button type="button"
+                                class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">報名</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 頁尾 結束標籤 -->
+
+
+    <!-- 版權宣告 起始標籤 -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-white"><a href="#" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>移民服務網</a>, All right
+                        reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-white">
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    Designed By <a class="border-bottom text-white" href="#">Steven</a>
+                    Distributed By <a class="border-bottom text-white" href="#">Steven</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 版權宣告 結束標籤 -->
+
+
+    <!-- 回到最上方 -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
